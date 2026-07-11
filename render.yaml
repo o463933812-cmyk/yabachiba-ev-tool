@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: yabachiba-ev-tool
+    env: python
+    plan: starter
+    buildCommand: ""
+    startCommand: python yabachiba_tool_server.py
+    envVars:
+      - key: YABACHIBA_HOST
+        value: 0.0.0.0
+      - key: YABACHIBA_PASSWORD
+        sync: false
