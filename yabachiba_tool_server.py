@@ -18,7 +18,7 @@ AUTH_COOKIE_NAME = "yabachiba_auth"
 AUTH_COOKIE_VALUE = secrets.token_urlsafe(32)
 AUTH_COOKIE = f"{AUTH_COOKIE_NAME}={AUTH_COOKIE_VALUE}"
 COOKIE_MAX_AGE = 60 * 60 * 24 * 30
-APP_VERSION = "2026-07-12-closing-follow32-v1"
+APP_VERSION = "2026-07-12-closing-follow32-cachefix-v1"
 INDEX_GZ = "yabachiba_tool_index.html.gz"
 INDEX_SIZE = 1168722
 INDEX_SHA256 = "f3a174db9504f6e700570ba2531385755087eb5891b132c9db086b3dc49c1a30"
@@ -89,7 +89,7 @@ class Handler(BaseHTTPRequestHandler):
             ("Content-Type", "text/html; charset=utf-8"),
             ("Content-Encoding", "gzip"),
             ("Content-Length", str(len(body))),
-            ("Cache-Control", "public, max-age=300"),
+            ("Cache-Control", "no-store, max-age=0, must-revalidate"),
             ("X-App-Version", APP_VERSION),
         ], body, head_only=head_only)
 
