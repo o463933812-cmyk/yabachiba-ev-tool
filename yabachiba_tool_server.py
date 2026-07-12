@@ -20,8 +20,8 @@ AUTH_COOKIE = f"{AUTH_COOKIE_NAME}={AUTH_COOKIE_VALUE}"
 COOKIE_MAX_AGE = 60 * 60 * 24 * 30
 APP_VERSION = "2026-07-12-ten-cherry-latest-model-v1"
 INDEX_GZ = "yabachiba_tool_index.html.gz"
-INDEX_SIZE = 5082355
-INDEX_SHA256 = "ba79a408087e2325911382a76543dd2d5c4821ab246e5e2c66da6cb442243f76"
+INDEX_SIZE = 9522347
+INDEX_SHA256 = "e8c5f1dde9140c75171035fd3939cac8a99c2c2212321f2d50e7948565b064ea"
 _cached_index: bytes | None = None
 
 
@@ -77,6 +77,7 @@ class Handler(BaseHTTPRequestHandler):
         return page(title, f"""
 <h1>{heading}</h1>
 {msg}
+<div style="border:1px solid #ff3d55;background:#fff1f2;color:#a40018;font-size:13px;line-height:1.5;font-weight:800;padding:8px;margin:0 0 10px">本ツールは購入者限定です。無断転載・コピー・再配布（URL・パスワード共有、画面内容・算出結果の共有を含む）は禁止しています。発見した場合は、販売停止・法的措置を含む対応を行う場合があります。</div>
 <form method=post action=/login>
   <label>{password_label}<br><input name=password type=password autofocus style="font-size:18px;padding:8px;width:100%"></label>
   <button style="margin-top:16px;font-size:18px;padding:8px 16px">{login_label}</button>
