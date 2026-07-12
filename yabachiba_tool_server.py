@@ -18,10 +18,10 @@ AUTH_COOKIE_NAME = "yabachiba_auth"
 AUTH_COOKIE_VALUE = secrets.token_urlsafe(32)
 AUTH_COOKIE = f"{AUTH_COOKIE_NAME}={AUTH_COOKIE_VALUE}"
 COOKIE_MAX_AGE = 60 * 60 * 24 * 30
-APP_VERSION = "2026-07-12-tencherry-winrate-time-v1"
+APP_VERSION = "2026-07-12-tencherry-est-winrate-v1"
 INDEX_GZ = "yabachiba_tool_index.html.gz"
-INDEX_SIZE = 1177601
-INDEX_SHA256 = "2dff20374fa6de6c816da055c1bf399de9374658f20564cdac7631ccfaa1d469"
+INDEX_SIZE = 1168511
+INDEX_SHA256 = "0c048530d799f808c0a29f09722965eb6ba7791fc3822e79eac458efc4d2076a"
 _cached_index: bytes | None = None
 
 
