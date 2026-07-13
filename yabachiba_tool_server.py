@@ -20,8 +20,8 @@ AUTH_COOKIE = f"{AUTH_COOKIE_NAME}={AUTH_COOKIE_VALUE}"
 COOKIE_MAX_AGE = 60 * 60 * 24 * 30
 APP_VERSION = "2026-07-12-ten-cherry-latest-model-v1"
 INDEX_GZ = "yabachiba_tool_index.html.gz"
-INDEX_SIZE = 9521809
-INDEX_SHA256 = "c1e46aa29b96ba3dca1a2dd03ff0d6f29fdf1a33cb8c1e1a7a7a822916a6e77f"
+INDEX_SIZE = 9695745
+INDEX_SHA256 = "1fa4f53456655cd96e9525451e593bb667ed6083a41cf57afc7e503547cc94d8"
 _cached_index: bytes | None = None
 
 
