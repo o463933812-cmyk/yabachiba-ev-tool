@@ -18,10 +18,10 @@ AUTH_COOKIE_NAME = "yabachiba_auth"
 AUTH_COOKIE_VALUE = secrets.token_urlsafe(32)
 AUTH_COOKIE = f"{AUTH_COOKIE_NAME}={AUTH_COOKIE_VALUE}"
 COOKIE_MAX_AGE = 60 * 60 * 24 * 30
-APP_VERSION = "2026-07-12-ten-cherry-latest-model-v1"
+APP_VERSION = "2026-07-16-filter-combo-fix-v1"
 INDEX_GZ = "yabachiba_tool_index.html.gz"
-INDEX_SIZE = 9695745
-INDEX_SHA256 = "1fa4f53456655cd96e9525451e593bb667ed6083a41cf57afc7e503547cc94d8"
+INDEX_SIZE = 7097932
+INDEX_SHA256 = "12325ac761359d0c806874be4c56a8084d4ac99b343992f2c216d790ddada2ce"
 _cached_index: bytes | None = None
 
 
